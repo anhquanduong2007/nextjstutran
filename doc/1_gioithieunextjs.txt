@@ -1,0 +1,21 @@
+## nextjs là 1 react framework
+- Khi nhắc đến nextjs người ta thường nói về 1 thuật ngữ là pre-rendering
+    + pre có nghĩa là trước     
+    + render hiểu đơn giản là trình chiếu 
+    + pre-rendering là trước cái thời điểm trình chiếu thì cái thuật ngữ này ý nó nói đến là cái quá trình 
+    nó chuyển đổi từ react-component -> html trước khi file html được trình chiếu lên trình duyệt (browser)
+- Có 2 loại pre-render trong nextjs
+    + SSR(server side rendering)
+        . Là quá trình truyển hóa từ react-component sang html và quá trình này được thực hiện ở phía server. 
+        Có 1 lưu ý khi sử dụng phương thức SSR này thì nó chỉ tạo ra file html mỗi khi browser nó gửi request 
+        có nghĩa là tôi chỉ tạo ra file html mỗi khi bên phía trình duyệt yêu cầu còn không tôi sẽ không 
+        chuyển hóa react-component sang html
+    + SSG(static site generator)
+        . Cũng là quá trình chuyển hóa react-component sang html tuy nhiên cái quá trình nó diễn ra bất kể là 
+        browser nó có gửi request hay không, có nghĩa là cái file html nó được tạo sẵn khi mà chúng ta deploy 
+        cái app của chúng ta khi mà cái app chúng ta thành thành phẩm rồi đó có nghĩa là khi mà chúng ta hoàn 
+        thiện nó thành thảnh phẩm đó thì những file html nó được tạo sẵn rồi và nó chỉ chờ trình duyệt gọi đến 
+        tên để nó trình chiếu lên thôi
+- Nexjts ra đời để làm gì?
+    + Cải thiện về performance
+    + SEO: Search Engine Optimization

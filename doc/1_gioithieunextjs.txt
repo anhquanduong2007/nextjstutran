@@ -16,6 +16,18 @@
         cái app của chúng ta khi mà cái app chúng ta thành thành phẩm rồi đó có nghĩa là khi mà chúng ta hoàn 
         thiện nó thành thảnh phẩm đó thì những file html nó được tạo sẵn rồi và nó chỉ chờ trình duyệt gọi đến 
         tên để nó trình chiếu lên thôi
+        
+**  CSR nó khác thế nào với 2 loại kia:
+-> SSR va SSG thì đều là gọi API lấy data trước, render ra HTML template sau đó mới gửi cho trình duyệt
+Còn CSR thì e render component ra trước, sau đó trong quá trình lấy data sẽ hiện thị biểu tượng Loading...
+Khi lấy xong thì cập nhật state và re-render.
+
 - Nexjts ra đời để làm gì?
     + Cải thiện về performance
     + SEO: Search Engine Optimization
+** Giải thích rõ hơn về SEO 
+-> Nếu bạn dùng React thuần thì sẽ ko tối ưu Seo vì lúc ban đầu website sẽ chỉ hiển thị loading và sau đó sau 
+khi component mount thì mới gửi request để lấy data (theo method CSR - client side rendering). Có nghĩa là 
+khi mới tiếp cận đến trình duyệt, app sẽ hoàn toàn trống trơn (ko có data) => google khó index. 
+Còn Nextjs thì nó pre-render HTML, có nghĩa là trước khi tiếp cận đến trình duyệt, Nextjs đã render ra 1 
+file HTML hoàn chỉnh (gồm data), sau đó mới trình chiếu lên trình duyệt => google index dễ dàng.

@@ -1,0 +1,3 @@
+## Cài đặt nextjs 
+- npx create-next-app + (tên project) 
+- npm run dev để chạy dự án

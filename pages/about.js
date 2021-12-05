@@ -1,10 +1,17 @@
+import Head from 'next/head';
 import React from 'react';
 
 const About = () => {
     return (
-        <div>
-            <h1>About page</h1>
-        </div>
+        <>
+            <Head>
+                <title>Coder Wikipedia | About</title>
+                <meta name="keywords" content="about"></meta>
+            </Head>
+            <div>
+                <h1>About page</h1>
+            </div>
+        </>
     );
 };
 

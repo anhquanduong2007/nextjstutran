@@ -1,10 +1,17 @@
+import Head from 'next/head';
 import React from 'react';
 
 const AllCoders = () => {
     return (
-        <div>
-            <h1>All Coders</h1>
-        </div>
+        <>
+            <Head>
+                <title>Coder Wikipedia | All Coders</title>
+                <meta name="keywords" content="coders"></meta>
+            </Head>
+            <div>
+                <h1>All Coders</h1>
+            </div>
+        </>
     );
 };
 

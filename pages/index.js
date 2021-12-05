@@ -7,10 +7,8 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <>
-      <Navbar />
       <h1>Home page</h1>
       <p>lorem</p>
-      <Footer />
     </>
   )
 }
